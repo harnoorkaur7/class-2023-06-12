@@ -9,8 +9,12 @@ editor: visual
 #| echo: false
 #| message: false
 library(tidyverse)
+library (readr)
 ```
 
 ```{r}
+#Reading in our files
+urlfile="https://raw.githubusercontent.com/PPBDS/primer.data/master/data-raw/social_capital_county.csv"
 
+ec <- read_csv(url(urlfile))
 ```
